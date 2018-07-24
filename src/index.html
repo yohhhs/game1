@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta name="screen-orientation" content="portrait">
+    <title>进击的玉兔</title>
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
+    <link rel="stylesheet" type="text/css" href="css/start.css">
+</head>
+<body>
+<div id="container">
+	<div id="guidePanel"></div>
+	<div id="gamepanel">
+		<div class="score-wrap">
+            <div class="heart"></div>
+            <span id="score">0</span>
+        </div>
+		<canvas id="stage"></canvas>
+	</div>
+	<div id="gameoverPanel"></div>
+	<div id="resultPanel">
+        <div class="bg">
+            <img class="top-img" src="./img/top.png">
+            <div class="input-wrapper name-input">
+                <input id="name" class="input-name" type="text">
+            </div>
+            <div class="input-wrapper tel-input">
+                <input id="tel" class="input-tel" type="text">
+            </div>
+            <img id="goStart" class="go-start" src="./img/tj.png" alt="">
+        </div>
+	</div>
+    <div id="fx">
+        <img src="./img/weixin.png">
+    </div>
+</div>
+<script src="./assets/zepto.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

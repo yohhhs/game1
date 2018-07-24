@@ -1,0 +1,51 @@
+
+@import 'base/reset.scss';
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+.top-img {
+  display: block;
+  margin: 30px auto 40px;
+  width: 80%;
+}
+.input-wrapper {
+  margin: 20px auto;
+  width: 168px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.name-input {
+  background-image: url("../img/input1.png");
+}
+.tel-input {
+  background-image: url("../img/input2.png");
+}
+.input-name, .input-tel {
+  width: 100px;
+  height: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.input-name {
+  margin: 42px 0 0 32px;
+}
+.input-tel {
+  margin: 37px 0 0 32px;
+}
+.go-start {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 150px;
+  transform: translateX(-50%);
+}

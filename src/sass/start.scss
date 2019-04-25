@@ -6,46 +6,41 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../img/bg.png") no-repeat;
+  background: url("../img/index_bg.png") no-repeat;
   background-size: cover;
   z-index: 999;
 }
-.top-img {
-  display: block;
-  margin: 30px auto 40px;
-  width: 80%;
-}
-.input-wrapper {
-  margin: 20px auto;
-  width: 168px;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-}
-.name-input {
-  background-image: url("../img/input1.png");
-}
-.tel-input {
-  background-image: url("../img/input2.png");
-}
-.input-name, .input-tel {
-  width: 100px;
-  height: 25px;
-  border: none;
-  outline: none;
-  text-align: center;
-}
-.input-name {
-  margin: 42px 0 0 32px;
-}
-.input-tel {
-  margin: 37px 0 0 32px;
-}
-.go-start {
+.content {
   position: absolute;
   left: 50%;
-  bottom: 0;
-  width: 150px;
-  transform: translateX(-50%);
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.input-box {
+  padding-top: 133px;
+  width: 233px;
+  height: 261px;
+  background: url("../img/select_info.png") no-repeat center / cover;
+}
+.input-wrapper {
+  margin: 0 10px 20px;
+  padding-left: 77px;
+  height: 33px;
+  input {
+    padding-left: 5px;
+    width: 100%;
+    height: 33px;
+  }
+  &.name-input {
+    background: url("../img/name.png") no-repeat left center / 67px 33px;
+  }
+  &.tel-input {
+    background: url("../img/phone.png") no-repeat left center / 67px 33px;
+  }
+}
+.query-btn {
+  margin: 30px auto;
+  width: 119px;
+  height: 39px;
+  background: url("../img/confirm_btn.png") no-repeat center / cover;
 }

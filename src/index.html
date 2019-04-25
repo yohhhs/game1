@@ -4,31 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
 	<meta name="screen-orientation" content="portrait">
-    <title>进击的玉兔</title>
+    <title>圆梦太平</title>
     <link rel="stylesheet" type="text/css" href="assets/index.css">
     <link rel="stylesheet" type="text/css" href="css/start.css">
 </head>
 <body>
 <div id="container">
-	<div id="guidePanel"></div>
-	<div id="gamepanel">
-		<div class="score-wrap">
-            <div class="heart"></div>
+    <div id="gamepanel">
+        <div class="score-wrap">
             <span id="score">0</span>
         </div>
-		<canvas id="stage"></canvas>
-	</div>
-	<div id="gameoverPanel"></div>
-	<div id="resultPanel">
-        <div class="bg">
-            <img class="top-img" src="./img/top.png">
-            <div class="input-wrapper name-input">
-                <input id="name" class="input-name" type="text">
+        <canvas id="stage"></canvas>
+    </div>
+	<div id="guidePanel">
+        <div class="btn-wrapper">
+            <div id="indexGoStart" class="btn-start"></div>
+            <div class="flex-btn">
+                <div id="lookRank" class="btn-look-rank"></div>
+                <div id="lookRule" class="btn-look-rule"></div>
             </div>
-            <div class="input-wrapper tel-input">
-                <input id="tel" class="input-tel" type="text">
+        </div>
+    </div>
+    <div id="rulePage" class="rule-page">
+        <div class="rule-page-content">
+            <div class="rule-detail"></div>
+            <div id="ruleBack" class="btn-back"></div>
+        </div>
+    </div>
+    <div id="rankPage" class="rank-page">
+        <div class="rank-page-content">
+            <div class="rank-detail">
+                <div  id="rankTitle" class="title-wrapper">
+                    <div class="rank-title">
+                        <p class="title-item">恭喜您获得第<span id="currentmc" class="title-number"></span>名</p>
+                        <p class="title-item">超越了<span id="currentMore" class="title-number"></span>名用户</p>
+                    </div>
+                </div>
+                <ul id="rankList" class="rank-list">
+                    <li class="rank-list-item">
+                        <span class="w24">21</span>
+                        <span class="w50">fasd</span>
+                        <span class="w26">541254</span>
+                    </li>
+                    <li class="rank-list-item">
+                        <span class="w24">21</span>
+                        <span class="w50">fasd</span>
+                        <span class="w26">541254</span>
+                    </li>
+                    <li class="rank-list-item">
+                        <span class="w24">21</span>
+                        <span class="w50">fasd</span>
+                        <span class="w26">541254</span>
+                    </li>
+                    <li class="rank-list-item">
+                        <span class="w24">21</span>
+                        <span class="w50">fasd</span>
+                        <span class="w26">541254</span>
+                    </li>
+                    <li class="rank-list-item">
+                        <span class="w24">21</span>
+                        <span class="w50">fasd</span>
+                        <span class="w26">541254</span>
+                    </li>
+                    <li class="rank-list-item">
+                        <span class="w24">21</span>
+                        <span class="w50">fasd</span>
+                        <span class="w26">541254</span>
+                    </li>
+                </ul>
             </div>
-            <img id="goStart" class="go-start" src="./img/tj.png" alt="">
+            <div id="rankBack" class="btn-back"></div>
+            <div id="rankPlay" class="btn-play-again"></div>
+        </div>
+    </div>
+
+	<!--<div id="gameoverPanel"></div>-->
+	<div id="resultPanel" class="bg">
+        <div class="content">
+            <div class="input-box">
+                <div class="input-wrapper name-input">
+                    <input id="name" type="text">
+                </div>
+                <div class="input-wrapper tel-input">
+                    <input id="tel" type="text">
+                </div>
+            </div>
+            <div id="submitInfo" class="query-btn"></div>
         </div>
 	</div>
     <div id="fx">

@@ -23,5 +23,7 @@ $('#goStart').on('click', function() {
                 alert(res.msg)
             }
         })
+    } else {
+        alert('请填写姓名和手机号')
     }
 })
